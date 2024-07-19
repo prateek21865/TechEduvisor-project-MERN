@@ -29,7 +29,7 @@ const Header = () => {
             <ul className="flex items-center">
                 <li className="mx-5 hover:border-b-2 hover:border-[#277db0]"><Link to="/ap">Academic Preparation</Link></li>
                 <li className="mx-5 hover:border-b-2 hover:border-[#277db0]"><Link to="/amp">Academic Mentorship Program</Link></li>
-                <li className="mx-5 hover:border-b-2 hover:border-[#277db0]"><Link to="/ssc">SoftSkills Courses</Link></li>
+                <li className="mx-5 hover:border-b-2 hover:border-[#277db0]"><Link to="/ssc">Soft Skills Courses</Link></li>
                 <li className="mx-5 hover:border-b-2 hover:border-[#277db0]"><Link to="/sap">Study Abroad Program</Link></li>
                 <li className="mx-5 hover:border-b-2 hover:border-[#277db0]"><Link to="/ml">MicroLearning</Link></li>
             </ul>
@@ -62,7 +62,7 @@ const Header = () => {
             <ul className="">
                 <li className="py-2"><Link to="/ap">Academic Preparation</Link></li>
                 <li className="py-2"><Link to="/amp">Academic Mentorship Program</Link></li>
-                <li className="py-2"><Link to="/ssc">SoftSkills Courses</Link></li>
+                <li className="py-2"><Link to="/ssc">Soft Skills Courses</Link></li>
                 <li className="py-2"><Link to="/sap">Study Abroad Program</Link></li>
                 <li className="py-2"><Link to="/ml">MicroLearning</Link></li>
             </ul>
