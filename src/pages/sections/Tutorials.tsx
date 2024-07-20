@@ -5,7 +5,11 @@ import Slider from "react-slick";
 import { SiYoutubemusic } from "react-icons/si";
 import YouTubePlayer from "../../components/YoutubePlayer";
 import { ImCross } from "react-icons/im";
-
+import BaseCatalysed from '../../assets/Youtube Thumbnails/Base Catalysed Tautomerism Lecture Thumbnail.png'
+import CommunicationSystem from '../../assets/Youtube Thumbnails/Communication System Lecture Thumbnail.png'
+import IdealGasEquation from '../../assets/Youtube Thumbnails/Ideal Gas Equation Lecture Thumbnail.png'
+import KineticTheoryOfGases from '../../assets/Youtube Thumbnails/Kinetic Theory of Gases Lecture Thumbnail.png'
+import Modulation from '../../assets/Youtube Thumbnails/Modulation Lecture Thumbnail.png'
 
 
 const Tutorials = () => {
@@ -39,12 +43,11 @@ const Tutorials = () => {
 
   const tutorials = [
         
-    { title : 'Ideal Gas Equation', chapter : 'Kinetic Theory of Gases', thumbnail :'https://www.keytechinc.com/wp-content/uploads/2022/01/video-thumbnail.jpg',
-        v_id : 'ay9jiyUH0mA'  },
-    { title : "Le Chatelier's Principle", chapter : 'Chemical Equilibrium', thumbnail :'https://www.keytechinc.com/wp-content/uploads/2022/01/video-thumbnail.jpg',
-        v_id : 'mFW195Wi8r0'  },
-    { title : 'Communication System', chapter : 'Elements of Communication', thumbnail :'https://www.keytechinc.com/wp-content/uploads/2022/01/video-thumbnail.jpg',
-        v_id : '58dxTiO5Q-k'  }
+    { title : 'Modulation',  thumbnail :Modulation, v_id : 'rh6DibIIiuA'  },
+    { title : 'Kinetic Theory of Gases',  thumbnail :KineticTheoryOfGases, v_id : 'I_6ESIOcKkw'  },
+    { title : 'Ideal Gas Equation',  thumbnail :IdealGasEquation, v_id : 'ay9jiyUH0mA'  },
+    { title : 'Communication System', thumbnail : CommunicationSystem, v_id : '58dxTiO5Q-k'  },
+    { title : 'Base Catalysed Tautomerism', thumbnail :BaseCatalysed, v_id :'r_07ABpyTXs'  }
   ];
 
   const playButtonClicked = (v:string) : void => {
@@ -78,16 +81,16 @@ const Tutorials = () => {
           <Slider {...settings}>
             {tutorials.map((tutorial, index) => (
 
-              <div key={index} className="bg-white text-black rounded-xl h-[310px] w-[310px] ">
-              <div className="h-45 flex justify-center items-center rounded-t-xl relative" 
+              <div key={index} className="bg-black text-white rounded-xl h-[260px] w-[310px] p-2">
+              <div className="h-[70%] flex justify-center items-center rounded-t-xl relative" 
                 onClick={()=>{playButtonClicked(tutorial.v_id)}}>
-                <SiYoutubemusic className="absolute text-[40px] text-red-600"/>
+                <SiYoutubemusic className="absolute text-[40px] text-red-600 hover:text-[50px] hover:text-green-500"/>
                 <img src={tutorial.thumbnail} alt="thumbnail" 
-                className="h-45 rounded-t-xl" />
+                className="h-[100%]" />
               </div>
-              <div className="flex flex-col items-center justify-center gap-4 p-2">
-                <p className="text-2xl text-black font-bold text-center">{tutorial.title}</p>
-                <p className="text-[18px] text-black text-center">{tutorial.chapter}</p>
+              <div className="flex flex-col items-center justify-center">
+                <p className="text-2xl font-bold text-center p-3">{tutorial.title}</p>
+                {/* <p className="text-[18px] text-black text-center">{tutorial.chapter}</p> */}
               </div>
             </div>
 
