@@ -44,15 +44,15 @@ const Footer = () => {
             <div className='text-white flex flex-col items-center'>
                 <h3 className='text-[20px] font-semibold pb-2'>CONTACT US</h3>
                 <div className='flex flex-wrap gap-5 pt-2'>
-                  <span className='text-[25px] hover:text-slate-400'><Link to='tel:+916261974399'><FiPhoneCall /></Link></span>
-                  <span className='text-[25px] hover:text-slate-400'><Link to='https://wa.me/+916261974399'><FaWhatsapp /></Link></span>
-                  <span className='text-[25px] hover:text-slate-400'><Link to='mailto:goutampatidar1903@gmail.com'><MdMailOutline /></Link></span>
+                  <span className='text-[25px] hover:text-slate-400'><Link to='tel:+919041191191'><FiPhoneCall /></Link></span>
+                  <span className='text-[25px] hover:text-slate-400'><Link to='https://wa.me/+919041191191'><FaWhatsapp /></Link></span>
+                  <span className='text-[25px] hover:text-slate-400'><Link to='mailto:info@prepsguide.com'><MdMailOutline /></Link></span>
                 </div>
                 <div>
-                    <Link to='https://www.google.com/maps/place/Ujjain,+Madhya+Pradesh/@23.1689772,75.7148188,12z/data=!3m1!4b1!4m6!3m5!1s0x39637469de00ff23:0x7f82abdf7899d412!8m2!3d23.1764665!4d75.7885163!16zL20vMDNuNjcw?entry=ttu'  
+                    <Link to='https://www.google.com/maps/search/1429A,+Sector+61B,+Chandigarh,UT,India,160036/@30.7330596,76.7014198,13z/data=!3m1!4b1?entry=ttu'  
                     className='flex flex-wrap py-5 items-center'>
                     <img src="https://www.google.com/images/branding/product/2x/maps_96in128dp.png" alt="map logo" className='size-[70px]'/>
-                    <p>59-A , Abhishek Nagar <br /> Nanakheda , Ujjain M.P.</p>
+                    <p>1429A, Sector 61B,<br />Chandigarh, India, 160036</p>
                     </Link>
                 </div>
             </div>

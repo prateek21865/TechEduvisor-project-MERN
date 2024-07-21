@@ -1,7 +1,16 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import CardPic from '../../assets/instructors/first_one.jpg';
+import AbhikPic from '../../assets/Mentors Images/Abhik.jpeg';
+import ChahatPic from '../../assets/Mentors Images/Chahat.jpeg'
+import DrMuskanPic from '../../assets/Mentors Images/Dr. Muskan.png'
+import MenusPic from '../../assets/Mentors Images/Menus.jpeg'
+import PiyushGoalPic from '../../assets/Mentors Images/Piyush Goal.jpeg'
+import StutiAjmeraPic from '../../assets/Mentors Images/Stuti Ajmera.jpeg'
+import PramodPathakPic from '../../assets/Faculties Images/Pramod Pathak Sir.png'
+import RitikaPic from '../../assets/Faculties Images/Ritika Mam.png'
+import ShikharPic from '../../assets/Faculties Images/Shikhar Sir.png'
+import ShivaniSalujaPic from '../../assets/Faculties Images/Shivani Saluja.png'
 
 const Teachers = () => {
   const settings = {
@@ -30,29 +39,37 @@ const Teachers = () => {
   };
 
   const teachers = [
-    { name: 'Maria', subject: 'Mathematics', img: CardPic },
-    { name: 'Sania', subject: 'Physics', img: CardPic },
-    { name: 'Kiara', subject: 'Chemistry', img: CardPic },
-    { name: 'Rashmika', subject: 'English', img: CardPic },
+    { name: 'Abhik', title: 'Mentor', img: AbhikPic },
+    { name: 'Chahat', title: 'Mentor', img: ChahatPic  },
+    { name: 'Dr. Muskan', title: 'Mentor', img: DrMuskanPic },
+    { name: 'Menus', title: 'Mentor', img: MenusPic },
+    { name: 'Piyush Goal', title: 'Mentor', img: PiyushGoalPic },
+    { name: 'Stuti Ajmera', title: 'Mentor', img: StutiAjmeraPic },
+    { name: 'Mr. Pramod', title: 'Faculty', img: PramodPathakPic },
+    { name: 'Mrs. Ritika', title: 'Faculty', img: RitikaPic },
+    { name: 'Mr. Shikhar', title: 'Faculty', img: ShikharPic },
+    { name: 'Mrs. Shivani Saluja', title: 'Faculty', img: ShivaniSalujaPic },
   ];
 
   return (
-    <div className="py-2 bg-[#0e2d42] text-white">
-      <div className="text-center text-[25px]">
-        <h3>Learn from India’s Best Teachers</h3>
+    <div className="py-8 bg-gradient-to-b from-white to-[#0e2d42] text-black px-7">
+      <div className="text-center text-[30px] font-semibold py-3">
+        <h3>Our Mentors & Faculties</h3>
       </div>
 
       <div className="w-11/12 lg:w-3/4 m-auto">
         <div className="mt-5">
           <Slider {...settings}>
             {teachers.map((teacher, index) => (
-              <div key={index} className="bg-white h-auto text-black rounded-xl max-sm:w-3/4">
-                <div className="h-56 bg-[#277db0] flex justify-center items-center rounded-t-xl">
+              <div key={index} className=" text-black rounded-xl h-[270px] w-[310px]">
+                <div className="h-50 flex justify-center items-center rounded-t-xl">
+                  <div className="h-44 w-44 rounded-full bg-white">
                   <img src={teacher.img} alt="teacher" className="h-44 w-44 rounded-full" />
+                  </div>
                 </div>
-                <div className="flex flex-col items-center justify-center gap-4 p-4">
-                  <p className="text-xl font-semibold">{teacher.name}</p>
-                  <p className="text-center text-red-500">{teacher.subject}</p>
+                <div className="flex flex-col items-center justify-center gap-4 p-3">
+                  <p className="text-2xl text-white font-bold">{teacher.name}</p>
+                  <p className="text-[18px] font-semibold text-slate-400">{teacher.title}</p>
                 </div>
               </div>
             ))}
