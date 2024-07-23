@@ -4,7 +4,7 @@ const WhyUs = () => {
       <h1 className="text-[40px] text-black font-bold">
         Why <span className="text-[#277db0]">Choose</span> Us ?
       </h1>
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-5">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-7">
         <div className="bg-[#F5F3FE] rounded-2xl py-6 px-3 h-[270px] w-[310px] text-center shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]">
           <h3 className="text-[20px] font-semibold border-b-[1px] border-b-black py-2">
             Top Industry Experts

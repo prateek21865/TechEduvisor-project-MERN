@@ -8,6 +8,28 @@ import HarmandeepPic from "../../assets/Student Testimonials/Harmandeep.jpeg";
 import MyraPic from "../../assets/Student Testimonials/Miss Myra.jpeg";
 import ShashwatPic from "../../assets/Student Testimonials/Shashwat.jpeg";
 
+import styled from "styled-components";
+
+const CustomSlider = styled(Slider)`
+  /* Customize Slick Slider arrow styles */
+  .slick-prev,
+  .slick-next {
+    font-size: 30px;
+    border-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    color: #0e2d42;
+  }
+
+  /* Hover effect */
+  .slick-prev:hover,
+  .slick-next:hover {
+    border-color: rgba(0, 0, 0, 0.9);
+  }
+`;
+
 const StudentsTestimonials = () => {
   const settings = {
     dots: false,
@@ -74,20 +96,20 @@ const StudentsTestimonials = () => {
   ];
 
   return (
-    <div className="py-8 bg-slate-300 text-black px-7">
-      <div className="text-center text-[30px] font-semibold py-3">
-        <h1 className="text-[35px] text-black font-semibold">
+    <div className="py-8 text-black px-7">
+      <div className="text-center text-[40px] max-md:text-[30px] font-semibold py-3">
+        <span className=" text-black border-b-2 border-yellow-400">
           Students <span className="text-[#277db0]">Testimonials</span>
-        </h1>
+        </span>
       </div>
 
       <div className="w-11/12 lg:w-3/4 m-auto">
         <div className="mt-5">
-          <Slider {...settings}>
+          <CustomSlider {...settings}>
             {students.map((student, index) => (
               <div
                 key={index}
-                className="bg-[#F5F3FE] text-black rounded-xl h-[470px] w-[270px] p-5"
+                className="bg-slate-100 text-black rounded-xl h-[470px] w-[270px] p-5"
               >
                 <div className="h-50 flex justify-center items-center rounded-t-xl">
                   <img
@@ -97,7 +119,7 @@ const StudentsTestimonials = () => {
                   />
                 </div>
                 <div className="flex flex-col items-center justify-center gap-4 p-3">
-                  <p className="text-2xl text-[#277db0] font-bold">
+                  <p className="text-2xl text-[#0e2d42] font-bold">
                     {student.name}
                   </p>
                   <p className="text-[18px] text-black py-2">
@@ -106,7 +128,7 @@ const StudentsTestimonials = () => {
                 </div>
               </div>
             ))}
-          </Slider>
+          </CustomSlider>
         </div>
       </div>
     </div>

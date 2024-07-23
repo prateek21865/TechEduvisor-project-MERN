@@ -11,6 +11,28 @@ import IdealGasEquation from "../../assets/Youtube Thumbnails/Ideal Gas Equation
 import KineticTheoryOfGases from "../../assets/Youtube Thumbnails/Kinetic Theory of Gases Lecture Thumbnail.png";
 import Modulation from "../../assets/Youtube Thumbnails/Modulation Lecture Thumbnail.png";
 
+import styled from "styled-components";
+
+const CustomSlider = styled(Slider)`
+  /* Customize Slick Slider arrow styles */
+  .slick-prev,
+  .slick-next {
+    font-size: 30px;
+    border-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    color: #0e2d42;
+  }
+
+  /* Hover effect */
+  .slick-prev:hover,
+  .slick-next:hover {
+    border-color: rgba(0, 0, 0, 0.9);
+  }
+`;
+
 const Tutorials = () => {
   const settings = {
     dots: false,
@@ -70,10 +92,10 @@ const Tutorials = () => {
   };
 
   return (
-    <div className="py-8 bg-[#426e89] text-black px-7 relative flex flex-col items-center">
-      <div className="text-center text-[35px] font-semibold py-3">
+    <div className="py-8 text-black px-7 relative flex flex-col items-center">
+      <div className="text-center text-[40px] max-md:text-[30px] font-semibold py-3">
         <h3>Get access to the Best Tutorials</h3>
-        <p className="text-[20px] text-yellow-500 font-normal">
+        <p className="text-[20px] max-md:text-[15px] text-yellow-500 font-normal">
           Experience our Unique Learning Methodology
         </p>
       </div>
@@ -97,11 +119,11 @@ const Tutorials = () => {
 
       <div className="w-11/12 lg:w-3/4 m-auto">
         <div className="mt-5">
-          <Slider {...settings}>
+          <CustomSlider {...settings}>
             {tutorials.map((tutorial, index) => (
               <div
                 key={index}
-                className="bg-black text-white rounded-xl h-[260px] w-[310px] p-2"
+                className="bg-black text-white shadow-md h-[260px] w-[310px] p-2"
               >
                 <div
                   className="h-[70%] flex justify-center items-center rounded-t-xl relative"
@@ -118,14 +140,14 @@ const Tutorials = () => {
                   />
                 </div>
                 <div className="flex flex-col items-center justify-center">
-                  <p className="text-2xl font-bold text-center p-3">
+                  <p className="text-2xl font-bold text-center p-3 text-yellow-500">
                     {tutorial.title}
                   </p>
                   {/* <p className="text-[18px] text-black text-center">{tutorial.chapter}</p> */}
                 </div>
               </div>
             ))}
-          </Slider>
+          </CustomSlider>
         </div>
       </div>
     </div>
