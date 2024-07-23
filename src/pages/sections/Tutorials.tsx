@@ -5,12 +5,11 @@ import Slider from "react-slick";
 import { SiYoutubemusic } from "react-icons/si";
 import YouTubePlayer from "../../components/YoutubePlayer";
 import { ImCross } from "react-icons/im";
-import BaseCatalysed from '../../assets/Youtube Thumbnails/Base Catalysed Tautomerism Lecture Thumbnail.png'
-import CommunicationSystem from '../../assets/Youtube Thumbnails/Communication System Lecture Thumbnail.png'
-import IdealGasEquation from '../../assets/Youtube Thumbnails/Ideal Gas Equation Lecture Thumbnail.png'
-import KineticTheoryOfGases from '../../assets/Youtube Thumbnails/Kinetic Theory of Gases Lecture Thumbnail.png'
-import Modulation from '../../assets/Youtube Thumbnails/Modulation Lecture Thumbnail.png'
-
+import BaseCatalysed from "../../assets/Youtube Thumbnails/Base Catalysed Tautomerism Lecture Thumbnail.png";
+import CommunicationSystem from "../../assets/Youtube Thumbnails/Communication System Lecture Thumbnail.png";
+import IdealGasEquation from "../../assets/Youtube Thumbnails/Ideal Gas Equation Lecture Thumbnail.png";
+import KineticTheoryOfGases from "../../assets/Youtube Thumbnails/Kinetic Theory of Gases Lecture Thumbnail.png";
+import Modulation from "../../assets/Youtube Thumbnails/Modulation Lecture Thumbnail.png";
 
 const Tutorials = () => {
   const settings = {
@@ -38,68 +37,99 @@ const Tutorials = () => {
     ],
   };
 
-  const [v_id,set_v_id]=React.useState("");
-  const [showYoutube,setShowYoutube]=React.useState(false);
+  const [v_id, set_v_id] = React.useState("");
+  const [showYoutube, setShowYoutube] = React.useState(false);
 
   const tutorials = [
-        
-    { title : 'Modulation',  thumbnail :Modulation, v_id : 'rh6DibIIiuA'  },
-    { title : 'Kinetic Theory of Gases',  thumbnail :KineticTheoryOfGases, v_id : 'I_6ESIOcKkw'  },
-    { title : 'Ideal Gas Equation',  thumbnail :IdealGasEquation, v_id : 'ay9jiyUH0mA'  },
-    { title : 'Communication System', thumbnail : CommunicationSystem, v_id : '58dxTiO5Q-k'  },
-    { title : 'Base Catalysed Tautomerism', thumbnail :BaseCatalysed, v_id :'r_07ABpyTXs'  }
+    { title: "Modulation", thumbnail: Modulation, v_id: "rh6DibIIiuA" },
+    {
+      title: "Kinetic Theory of Gases",
+      thumbnail: KineticTheoryOfGases,
+      v_id: "I_6ESIOcKkw",
+    },
+    {
+      title: "Ideal Gas Equation",
+      thumbnail: IdealGasEquation,
+      v_id: "ay9jiyUH0mA",
+    },
+    {
+      title: "Communication System",
+      thumbnail: CommunicationSystem,
+      v_id: "58dxTiO5Q-k",
+    },
+    {
+      title: "Base Catalysed Tautomerism",
+      thumbnail: BaseCatalysed,
+      v_id: "r_07ABpyTXs",
+    },
   ];
 
-  const playButtonClicked = (v:string) : void => {
-        set_v_id(v);
-        setShowYoutube(true);
-  }
+  const playButtonClicked = (v: string): void => {
+    set_v_id(v);
+    setShowYoutube(true);
+  };
 
   return (
     <div className="py-8 bg-[#426e89] text-black px-7 relative flex flex-col items-center">
       <div className="text-center text-[35px] font-semibold py-3">
         <h3>Get access to the Best Tutorials</h3>
-        <p className="text-[20px] font-normal">Experience our Unique Learning Methodology</p>
+        <p className="text-[20px] text-yellow-500 font-normal">
+          Experience our Unique Learning Methodology
+        </p>
       </div>
 
-      { 
-      showYoutube && 
-      <div className="absolute top-[10%] z-50 sm:w-[490px]">
-      <div className="bg-black p-2 ">
-        <div className="flex justify-end text-white p-2">
-            <ImCross onClick={()=>{setShowYoutube(false)}}/>
+      {showYoutube && (
+        <div className="absolute top-[10%] z-50 sm:w-[490px]">
+          <div className="bg-black p-2 ">
+            <div className="flex justify-end text-white p-2">
+              <ImCross
+                onClick={() => {
+                  setShowYoutube(false);
+                }}
+              />
+            </div>
+            <div className="flex justify-center">
+              <YouTubePlayer videoId={v_id} />
+            </div>
+          </div>
         </div>
-        <div className="flex justify-center">
-          <YouTubePlayer videoId={v_id} /> 
-        </div>
-      </div>
-    </div>
-      }
+      )}
 
       <div className="w-11/12 lg:w-3/4 m-auto">
         <div className="mt-5">
           <Slider {...settings}>
             {tutorials.map((tutorial, index) => (
-
-              <div key={index} className="bg-black text-white rounded-xl h-[260px] w-[310px] p-2">
-              <div className="h-[70%] flex justify-center items-center rounded-t-xl relative" 
-                onClick={()=>{playButtonClicked(tutorial.v_id)}}>
-                <SiYoutubemusic className="absolute text-[40px] text-red-600 hover:text-[50px] hover:text-green-500"/>
-                <img src={tutorial.thumbnail} alt="thumbnail" 
-                className="h-[100%]" />
+              <div
+                key={index}
+                className="bg-black text-white rounded-xl h-[260px] w-[310px] p-2"
+              >
+                <div
+                  className="h-[70%] flex justify-center items-center rounded-t-xl relative"
+                  onClick={() => {
+                    playButtonClicked(tutorial.v_id);
+                  }}
+                >
+                  <SiYoutubemusic className="absolute text-[40px] text-red-600 hover:text-[55px] hover:text-green-500" />
+                  <SiYoutubemusic className="absolute text-[40px] text-red-600 hover:text-[55px] hover:text-green-500" />
+                  <img
+                    src={tutorial.thumbnail}
+                    alt="thumbnail"
+                    className="h-[100%]"
+                  />
+                </div>
+                <div className="flex flex-col items-center justify-center">
+                  <p className="text-2xl font-bold text-center p-3">
+                    {tutorial.title}
+                  </p>
+                  {/* <p className="text-[18px] text-black text-center">{tutorial.chapter}</p> */}
+                </div>
               </div>
-              <div className="flex flex-col items-center justify-center">
-                <p className="text-2xl font-bold text-center p-3">{tutorial.title}</p>
-                {/* <p className="text-[18px] text-black text-center">{tutorial.chapter}</p> */}
-              </div>
-            </div>
-
             ))}
           </Slider>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default Tutorials;
