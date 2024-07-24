@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@mui/icons-material": "^5.16.4",
+    "@mui/material": "^5.16.4",
     "@types/react-youtube": "^7.10.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -17,9 +19,13 @@
     "react-router-dom": "^6.24.1",
     "react-slick": "^0.30.2",
     "react-youtube": "^10.1.0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "styled-component": "^2.8.0",
+    "styled-components": "^6.1.12"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.24.8",
+    "@babel/preset-react": "^7.24.7",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@types/react-slick": "^0.23.13",
