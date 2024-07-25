@@ -1,16 +1,16 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import AbhikPic from "../../assets/Mentors Images/Abhik.jpeg";
-import ChahatPic from "../../assets/Mentors Images/Chahat.jpeg";
-import DrMuskanPic from "../../assets/Mentors Images/Dr. Muskan.png";
-import MenusPic from "../../assets/Mentors Images/Menus.jpeg";
-import PiyushGoalPic from "../../assets/Mentors Images/Piyush Goal.jpeg";
-import StutiAjmeraPic from "../../assets/Mentors Images/Stuti Ajmera.jpeg";
-import PramodPathakPic from "../../assets/Faculties Images/Pramod Pathak Sir.png";
-import RitikaPic from "../../assets/Faculties Images/Ritika Mam.png";
-import ShikharPic from "../../assets/Faculties Images/Shikhar Sir.png";
-import ShivaniSalujaPic from "../../assets/Faculties Images/Shivani Saluja.png";
+import AbhikPic from "../../../assets/Mentors Images/Abhik.jpeg";
+import ChahatPic from "../../../assets/Mentors Images/Chahat.jpeg";
+import DrMuskanPic from "../../../assets/Mentors Images/Dr. Muskan.png";
+import MenusPic from "../../../assets/Mentors Images/Menus.jpeg";
+import PiyushGoalPic from "../../../assets/Mentors Images/Piyush Goal.jpeg";
+import StutiAjmeraPic from "../../../assets/Mentors Images/Stuti Ajmera.jpeg";
+import PramodPathakPic from "../../../assets/Faculties Images/Pramod Pathak Sir.png";
+import RitikaPic from "../../../assets/Faculties Images/Ritika Mam.png";
+import ShikharPic from "../../../assets/Faculties Images/Shikhar Sir.png";
+import ShivaniSalujaPic from "../../../assets/Faculties Images/Shivani Saluja.png";
 import styled from "styled-components";
 
 const CustomSlider = styled(Slider)`

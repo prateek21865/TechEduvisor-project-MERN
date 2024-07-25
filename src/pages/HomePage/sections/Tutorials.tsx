@@ -3,13 +3,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { SiYoutubemusic } from "react-icons/si";
-import YouTubePlayer from "../../components/YoutubePlayer";
+import YouTubePlayer from "../../../components/YoutubePlayer";
 import { ImCross } from "react-icons/im";
-import BaseCatalysed from "../../assets/Youtube Thumbnails/Base Catalysed Tautomerism Lecture Thumbnail.png";
-import CommunicationSystem from "../../assets/Youtube Thumbnails/Communication System Lecture Thumbnail.png";
-import IdealGasEquation from "../../assets/Youtube Thumbnails/Ideal Gas Equation Lecture Thumbnail.png";
-import KineticTheoryOfGases from "../../assets/Youtube Thumbnails/Kinetic Theory of Gases Lecture Thumbnail.png";
-import Modulation from "../../assets/Youtube Thumbnails/Modulation Lecture Thumbnail.png";
+import BaseCatalysed from "../../../assets/Youtube Thumbnails/Base Catalysed Tautomerism Lecture Thumbnail.png";
+import CommunicationSystem from "../../../assets/Youtube Thumbnails/Communication System Lecture Thumbnail.png";
+import IdealGasEquation from "../../../assets/Youtube Thumbnails/Ideal Gas Equation Lecture Thumbnail.png";
+import KineticTheoryOfGases from "../../../assets/Youtube Thumbnails/Kinetic Theory of Gases Lecture Thumbnail.png";
+import Modulation from "../../../assets/Youtube Thumbnails/Modulation Lecture Thumbnail.png";
 
 import styled from "styled-components";
 

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import FirstImg from "../../assets/Header Images/smiley-pregnant-woman-holding-clipboard-pointing-up-with-copy-space.png";
+import FirstImg from "../../../assets/Header Images/smiley-pregnant-woman-holding-clipboard-pointing-up-with-copy-space.png";
 
 const HeadingSection = () => {
   const texts = ["Knowledge", "Support", "Excel"];

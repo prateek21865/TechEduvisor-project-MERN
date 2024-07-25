@@ -1,4 +1,4 @@
-import PramodSir from "../../assets/Faculties Images/Pramod Pathak Sir.png";
+import PramodSir from "../../../assets/Faculties Images/Pramod Pathak Sir.png";
 
 const Founder = () => {
   return (

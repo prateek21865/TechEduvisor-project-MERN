@@ -1,4 +1,4 @@
-import Accordian from "../../components/Accordian";
+import Accordian from "../../../components/Accordian";
 
 const faqData = [
   {
