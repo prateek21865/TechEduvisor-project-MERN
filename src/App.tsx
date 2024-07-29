@@ -1,6 +1,7 @@
 import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import HomePage from './pages/HomePage'
+import AcademicPreparation from './pages/sections/AcademicPreparation/AcademicPreparation'
 
 function App() {
 
@@ -11,7 +12,7 @@ function App() {
             <Route path="/" element={<HomePage/>} />
             <Route path="/login" element={<HomePage/>} />
             <Route path="/signup" element={<HomePage/>} />
-            <Route path="/ap" element={<HomePage/>} />
+            <Route path="/ap" element={<AcademicPreparation />} />
             <Route path="/amp" element={<HomePage/>} />
             <Route path="/ssc" element={<HomePage/>} />
             <Route path="/sap" element={<HomePage/>} />
