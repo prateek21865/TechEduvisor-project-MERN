@@ -1,10 +1,14 @@
+
 import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import HomePage from './pages/HomePage'
+import HomePage from "./pages/HomePage/HomePage";
 import AcademicPreparation from './pages/sections/AcademicPreparation/AcademicPreparation'
 
-function App() {
 
+
+
+
+function App() {
   return (
     <>
       <BrowserRouter>
@@ -18,9 +22,10 @@ function App() {
             <Route path="/sap" element={<HomePage/>} />
             <Route path="/ml" element={<HomePage/>} />
           </Routes>
+
       </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

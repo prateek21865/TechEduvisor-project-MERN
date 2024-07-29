@@ -1,5 +1,5 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 import KeyFeatureSection from "./sections/KeyFeatureSection";
 import Teachers from "./sections/Teachers";
 import WhyUs from "./sections/WhyUs";
@@ -32,7 +32,7 @@ const HomePage = () => {
 
         {/* AcademicPreparations section */}
         <section>
-          <AcademicPreparations/>
+          <AcademicPreparations />
         </section>
 
         {/* AcademicMentorshipProgram section */}

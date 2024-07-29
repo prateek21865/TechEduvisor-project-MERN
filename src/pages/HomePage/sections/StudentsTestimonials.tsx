@@ -1,12 +1,12 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import AmanPic from "../../assets/Student Testimonials/Aman Garg.jpeg";
-import AnkushPic from "../../assets/Student Testimonials/Ankush Singhania.jpeg";
-import KrishPic from "../../assets/Student Testimonials/Krish Singh.jpeg";
-import HarmandeepPic from "../../assets/Student Testimonials/Harmandeep.jpeg";
-import MyraPic from "../../assets/Student Testimonials/Miss Myra.jpeg";
-import ShashwatPic from "../../assets/Student Testimonials/Shashwat.jpeg";
+import AmanPic from "../../../assets/Student Testimonials/Aman Garg.jpeg";
+import AnkushPic from "../../../assets/Student Testimonials/Ankush Singhania.jpeg";
+import KrishPic from "../../../assets/Student Testimonials/Krish Singh.jpeg";
+import HarmandeepPic from "../../../assets/Student Testimonials/Harmandeep.jpeg";
+import MyraPic from "../../../assets/Student Testimonials/Miss Myra.jpeg";
+import ShashwatPic from "../../../assets/Student Testimonials/Shashwat.jpeg";
 
 import styled from "styled-components";
 
