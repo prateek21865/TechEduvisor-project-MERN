@@ -4,7 +4,7 @@ import {
     CarouselItem,
     CarouselNext,
     CarouselPrevious,
-  } from "../ui/carousel";
+  } from "../../ui/carousel";
   
   function Slider() {
     return (

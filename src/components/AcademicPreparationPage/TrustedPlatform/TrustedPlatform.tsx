@@ -9,8 +9,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSmile, faClipboardCheck, faVideo, faFileAlt } from '@fortawesome/free-solid-svg-icons';
-import { Card, CardContent } from "../ui/card";
-import { Button } from "../ui/button";
+import { Card, CardContent } from "../../ui/card";
+import { Button } from "../../ui/button";
 
 interface StatisticProps {
   icon: any;

@@ -6,9 +6,9 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "../ui/carousel";
-import { Card, CardContent, CardFooter, CardHeader } from "../ui/card";
-import { Button } from "../ui/button";
+} from "../../ui/carousel";
+import { Card, CardContent, CardFooter, CardHeader } from "../../ui/card";
+import { Button } from "../../ui/button";
 
 interface Course {
   id: number;
