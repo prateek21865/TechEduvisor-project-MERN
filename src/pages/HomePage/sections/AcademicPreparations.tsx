@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 const AcademicPreparations = () => {
   return (
+
     <div className="grid grid-cols-12 p-5 my-5">
       <h1 className="col-span-12 text-center font-bold text-[40px] max-lg:text-[30px] text-[#0e2d42] p-2">
         <span className="border-b-2 border-yellow-400">
