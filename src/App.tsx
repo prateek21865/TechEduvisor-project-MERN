@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import HomePage from "./pages/HomePage/HomePage";
 import AcademicPreparation from './pages/sections/AcademicPreparation/AcademicPreparation'
 import AcademicMentorship from './pages/sections/AcademicMentorship/AcademicMentorship';
+import StudyAbroad from './pages/sections/StudyAbroad/StudyAbroad';
 
 
 
@@ -20,7 +21,7 @@ function App() {
             <Route path="/ap" element={<AcademicPreparation />} />
             <Route path="/amp" element={<AcademicMentorship />} />
             <Route path="/ssc" element={<HomePage/>} />
-            <Route path="/sap" element={<HomePage/>} />
+            <Route path="/sap" element={<StudyAbroad />} />
             <Route path="/ml" element={<HomePage/>} />
           </Routes>
 
