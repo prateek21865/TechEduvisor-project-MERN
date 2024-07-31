@@ -13,6 +13,7 @@ import SkillsProgram from "./sections/SkillProgram";
 import StudyAbroad from "./sections/StudyAbroad";
 import HeadingSection from "./sections/HeadingSection";
 
+
 const HomePage = () => {
   return (
     <>
