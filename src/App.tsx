@@ -6,6 +6,7 @@ import SoftSkillsProgram from "./pages/SoftSkills/SoftSkillsProgram";
 import MicroLearning from "./pages/MicroLearning/MicroLearning";
 import AcademicPreparation from './pages/sections/AcademicPreparation/AcademicPreparation'
 import AcademicMentorship from './pages/sections/AcademicMentorship/AcademicMentorship';
+import StudyAbroad from './pages/sections/StudyAbroad/StudyAbroad';
 
 
 function App() {
@@ -18,9 +19,9 @@ function App() {
             <Route path="/signup" element={<HomePage/>} />
             <Route path="/ap" element={<AcademicPreparation />} />
             <Route path="/amp" element={<AcademicMentorship />} />
-          <Route path="/ssc" element={<SoftSkillsProgram />} />
-          <Route path="/sap" element={<HomePage />} />
-          <Route path="/ml" element={<MicroLearning />} />
+            <Route path="/ssc" element={<SoftSkillsProgram />} />
+            <Route path="/sap" element={<StudyAbroad />} />
+            <Route path="/ml" element={<MicroLearning />} />
           </Routes>
       </BrowserRouter>
     </>

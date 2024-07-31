@@ -37,7 +37,7 @@ const faqData: FAQItem[] = [
 
 const FAQ: React.FC = () => {
   return (
-    <div className="bg-[#0055B0] text-white py-16 px-4">
+    <div className="bg-[#0E2D42] text-white py-16 px-4">
       <div className="max-w-[80rem] mx-auto">
       <h2 className="text-4xl font-bold mb-6">Frequently Asked Questions</h2>
      
