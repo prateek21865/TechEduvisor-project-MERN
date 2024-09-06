@@ -2,8 +2,8 @@ import React from 'react';
 
 const HeroSection: React.FC = () => {
   return (
-    // <div className="w-full h-[450px] md:min-h-[70vh] relative overflow-hidden bg-[#007AFC] mt-[2rem]">
-    <div className="w-full h-[450px] md:min-h-[70vh] relative overflow-hidden bg-[#0E2D42] mt-[2rem]">
+    // <div className="w-full h-[450px] md:min-h-[70vh] relative overflow-hidden bg-[#0E2D42] mt-[2rem]">
+    <div className="w-full h-[450px] md:min-h-[70vh] relative overflow-hidden bg-[#2b4454] mt-[2rem]">
       <div 
         className="absolute inset-0 bg-cover md:bg-contain bg-no-repeat  md:right-[220px]"
         style={{backgroundImage: "url('mentor-header.png')"}}
