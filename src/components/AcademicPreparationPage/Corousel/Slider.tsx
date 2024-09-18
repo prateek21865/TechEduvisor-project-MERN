@@ -8,7 +8,7 @@ import {
   
   function Slider() {
     return (
-      <Carousel className="w-screen bg-[#0E2D42] pt-[6rem]">
+      <Carousel className="w-screen bg-[#2B4454] pt-[6rem]">
         <CarouselContent >
           <CarouselItem>
             <div className="w-full h-full">

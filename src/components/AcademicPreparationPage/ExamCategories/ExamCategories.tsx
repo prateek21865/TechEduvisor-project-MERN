@@ -35,7 +35,7 @@ const ExamCategories: React.FC = () => {
     <div className="container mx-auto px-4 py-8 ">
       <h1 className="text-3xl font-bold text-center mb-2">Exam Categories</h1>
       <p className="text-center mb-8">
-        PW is preparing students for 18 exam categories. Scroll down to find the one you are preparing for
+      PrepsGuide is preparing students for 18 exam categories. Scroll down to find the one you are preparing for
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {categories.map((category, index) => (

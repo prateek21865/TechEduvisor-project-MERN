@@ -70,6 +70,10 @@ const Teachers = () => {
     { name: "Mrs. Ritika", title: "Faculty", img: RitikaPic },
     { name: "Mr. Shikhar", title: "Faculty", img: ShikharPic },
     { name: "Mrs. Shivani Saluja", title: "Faculty", img: ShivaniSalujaPic },
+    { name: "Mrs. Pratibha", title: "Faculty", img: "/faculties2/Pratibha_Mam.png" },
+    { name: "Mr. Praveen Rana", title: "Faculty", img: "/faculties2/Praveen_Rana.png" },
+    { name: "Mr. Sahil Khanna", title: "Faculty", img: "/faculties2/Sahil_Khanna.png" },
+    { name: "Mr. Vikas", title: "Faculty", img: "/faculties2/Vikas.png" },
   ];
 
   return (

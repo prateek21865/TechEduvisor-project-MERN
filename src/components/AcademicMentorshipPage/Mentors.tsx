@@ -65,10 +65,12 @@ interface Teacher {
 }
 
 const teachers: Teacher[] = [
-  { name: "Pramod Pathak Sir", imageUrl: "faculties/pramod-pathak-sir.png" },
-  { name: "Ritika Mam", imageUrl: "faculties/ritika-mam.png" },
-  { name: "Shikhar Sir", imageUrl: "faculties/shikhar-sir.png" },
-  { name: "Shivani Saluja", imageUrl: "faculties/shivani-saluja.png" },
+  { name: "Abhik Sir", imageUrl: "mentors/Abhik.jpeg" },
+  { name: "Chahat Mam", imageUrl: "mentors/Chahat.jpeg" },
+  { name: "Dr. Muskan Mam", imageUrl: "mentors/Dr. Muskan.png" },
+  { name: "Menus Mam", imageUrl: "mentors/Menus.jpeg" },
+  { name: "Piyush Goal Sir", imageUrl: "mentors/Piyush Goal.jpeg" },
+  { name: "Stuti Ajmera Mam", imageUrl: "mentors/Stuti Ajmera.jpeg" },
 ];
 
 const Mentors: React.FC = () => {
