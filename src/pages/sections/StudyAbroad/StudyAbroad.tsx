@@ -3,12 +3,14 @@ import HeroSection from '../../../components/StudyAbroadPage/HeroSection/HeroSec
 import Header from '../../../components/Header'
 import Standout from '../../../components/StudyAbroadPage/Standout/Standout'
 import JourneySteps from '../../../components/StudyAbroadPage/JourneySteps/JourneySteps'
-import AboutTeachers from '../../../components/StudyAbroadPage/AboutTeachers/AboutTeachers'
+// import AboutTeachers from '../../../components/StudyAbroadPage/AboutTeachers/AboutTeachers'
 import AboutTeachersDemoVideos from '../../../components/StudyAbroadPage/AboutTeachersDemoVideos/AboutTeachersDemoVideos'
 import TestimonialSection from '../../../components/StudyAbroadPage/TestimonialSection/TestimonialSection'
 import FounderSection from '../../../components/StudyAbroadPage/FounderSection/FounderSection'
-import FAQ from '../../../components/AcademicPreparationPage/FAQ/FAQ'
+
 import Footer from '../../../components/Footer'
+import FAQStudyAbroad from '../../../components/StudyAbroadPage/FAQStudyAbroad/FAQStudyAbroad'
+import Founder from '../../HomePage/sections/Founder'
 
 function StudyAbroad() {
   return (
@@ -17,11 +19,12 @@ function StudyAbroad() {
         <HeroSection />
         <JourneySteps />
         <Standout />
-        <AboutTeachers />
+        {/* <AboutTeachers /> */}
         <AboutTeachersDemoVideos />
-        <FAQ />
         <TestimonialSection />
         <FounderSection />
+        {/* <Founder /> */}
+        <FAQStudyAbroad />
         <Footer />
     </div>
   )

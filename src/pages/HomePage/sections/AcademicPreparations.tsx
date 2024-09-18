@@ -45,7 +45,7 @@ const AcademicPreparations = () => {
             </div>
 
             <div className="w-[270px] p-2 border-b-[1px] border-slate-400 text-md">
-              <span className="font-semibold">On Demand</span> by Chapter
+              <span className="font-semibold">On Demand</span> Chapter
               completion
             </div>
 

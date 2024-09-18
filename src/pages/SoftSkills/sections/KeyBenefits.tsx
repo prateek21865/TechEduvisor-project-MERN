@@ -1,3 +1,4 @@
+
 const KeyBenefits = () => {
   return (
     <div className="grid grid-cols-12 w-full h-[460px] max-lg:h-[820px] max-md:h-[750px] items-center justify-center">

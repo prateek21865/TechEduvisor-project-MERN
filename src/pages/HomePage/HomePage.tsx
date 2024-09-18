@@ -12,6 +12,7 @@ import AcademicMentorshipProgram from "./sections/AcademicMentorshipProgram";
 import SkillsProgram from "./sections/SkillProgram";
 import StudyAbroad from "./sections/StudyAbroad";
 import HeadingSection from "./sections/HeadingSection";
+import FounderSection from "../../components/StudyAbroadPage/FounderSection/FounderSection";
 
 
 const HomePage = () => {
@@ -77,7 +78,8 @@ const HomePage = () => {
         {/* founder section starts here */}
 
         <section>
-          <Founder />
+          {/* <Founder /> */}
+          <FounderSection />
         </section>
 
         {/* more sections will be there */}

@@ -21,12 +21,12 @@ const HeadingSection = () => {
   }, [index]);
 
   return (
-    <div className="grid grid-cols-12 w-full h-[360px] items-center justify-center pt-2 pb-4 bg-[#0e2d42] relative">
+    <div className="grid grid-cols-12 w-full h-[460px] items-center justify-center pt-2 pb-4 bg-[#0e2d42] relative">
       <div className="lg:col-span-4"></div>
       <img
         src={FirstImg}
         alt="first image"
-        className="absolute h-[250px] bottom-0 left-[100px] max-lg:hidden"
+        className="absolute h-[350px] bottom-0 left-[100px] max-lg:hidden"
       />
       <div className="flex flex-col col-span-12 lg:col-span-8 max-lg:px-6 lg:pr-[70px]">
         <h1 className="text-white text-[50px] max-md:text-[40px] lg:pt-2">

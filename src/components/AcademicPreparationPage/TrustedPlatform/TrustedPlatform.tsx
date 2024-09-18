@@ -44,7 +44,7 @@ const TrustedPlatform: React.FC = () => {
         The best platform for IIT-JEE, NEET, NDA, CBSE
         </h2>
         <p className="text-gray-600 max-w-2xl mx-auto">
-        PrepsGuide, a leading educational platform, has garnered a vast student community and continues to elevate educational standards. Dedicated to meeting student needs with exceptional faculty support, PrepsGuide emphasizes affordability amidst the financial constraints of online learning.
+        PrepsGuide, a leading educational platform, has garnered a vast student community and continues to elevate educational standards. Dedicated to meet student needs with exceptional faculty support, PrepsGuide emphasizes affordability amidst the financial constraints of online learning.
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-8">

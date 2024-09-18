@@ -8,6 +8,7 @@ import OnlineClassesHero from "../../../components/AcademicPreparationPage/Onlin
 import TrustedPlatform from "../../../components/AcademicPreparationPage/TrustedPlatform/TrustedPlatform"
 import Header from "../../../components/Header"
 import Footer from "../../../components/Footer"
+import FacultyCarousel from "../../../components/AcademicPreparationPage/FacultyCarousel/FacultyCarousel"
 
 
 
@@ -21,6 +22,7 @@ function AcademicPreparation() {
       <OnlineClassesHero />
       <CourseCarousel />
       <TrustedPlatform />
+      <FacultyCarousel />
       <FAQ />
       <Footer />
     </div>
